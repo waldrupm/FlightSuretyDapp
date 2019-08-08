@@ -14,12 +14,20 @@ App = {
 
   readForm: function () {
       App.airlineRegistrationAddress = $("#airlineRegistrationAddress").val();
-      App.purchaseInsuranceFlight = $("#purchaseInsuranceFlight option:selected").val();
+      App.purchaseInsuranceFlight = $("#purchaseInsuranceFlight option:selected").text();
+      App.purchaseInsuranceValue = $("#purchaseInsuranceValue").val();
+      App.checkFlightStatusFlightName = $("#checkFlightStatusFlightName option:selected").text();
+      App.operationalStatus_Status = $("#operationalStatus_Status option:selected").text();
+      App.authorizeContractAddress = $("#authorizeContractAddress").val();
 
       // console log all values
       console.log(
           App.airlineRegistrationAddress,
-          App.purchaseInsuranceFlight
+          App.purchaseInsuranceFlight,
+          App.purchaseInsuranceValue,
+          App.checkFlightStatusFlightName,
+          App.operationalStatus_Status,
+          App.authorizeContractAddress
       );
   },
 
